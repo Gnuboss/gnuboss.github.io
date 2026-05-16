@@ -1,0 +1,23 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="Page not found — Bronson Harrington">
+  <section class="not-found">
+    <div class="container">
+      <span class="accent" style="font-family:var(--font-display);font-size:5rem;font-weight:300;">404</span>
+      <h1>Page not found<span class="accent">.</span></h1>
+      <p class="muted">This page doesn't exist or has moved.</p>
+      <a href="/" class="btn" style="margin-top:2rem">Back home</a>
+    </div>
+  </section>
+</Base>
+
+<style>
+.not-found {
+  padding: clamp(5rem, 15vw, 10rem) 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+</style>

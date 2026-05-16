@@ -1,0 +1,76 @@
+---
+const navLinks = [
+  { label: 'Work',    href: '#work'    },
+  { label: 'Method',  href: '#method'  },
+  { label: 'About',   href: '#about'   },
+  { label: 'Contact', href: '#contact' },
+];
+---
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="nav-logo">
+      BH<span class="accent">.</span>
+    </a>
+    <ul class="nav-links">
+      {navLinks.map(link => (
+        <li><a href={link.href}>{link.label}</a></li>
+      ))}
+    </ul>
+    <a href="#contact" class="btn btn-accent nav-cta">Free audit</a>
+  </div>
+</nav>
+
+<style>
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--paper);
+  border-bottom: 1px solid var(--border);
+  padding: 1.1rem 0;
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-logo {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  flex-shrink: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin-left: auto;
+}
+
+.nav-links a {
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--ink); }
+
+.nav-cta {
+  flex-shrink: 0;
+  padding: 0.55rem 1.25rem;
+  font-size: 0.72rem;
+}
+
+@media (max-width: 640px) {
+  .nav-links { display: none; }
+  .nav-cta   { margin-left: auto; }
+}
+</style>
