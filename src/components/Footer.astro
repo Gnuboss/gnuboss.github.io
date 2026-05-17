@@ -3,61 +3,108 @@ const year = new Date().getFullYear();
 ---
 
 <footer class="footer">
+  <div class="footer-top-rule"></div>
   <div class="container footer-inner">
-    <span class="footer-logo">BH<span class="accent">.</span></span>
-    <p class="muted">© {year} Bronson Harrington. San José, Costa Rica.</p>
+    <div class="footer-brand">
+      <span class="footer-logo">BH<span style="color:var(--orange)">.</span></span>
+      <p class="footer-tagline">Organic authority as<br/>credibility infrastructure.</p>
+    </div>
     <div class="footer-links">
-      <a href="https://linkedin.com/in/bronsonharrington" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="mailto:gnuboss@gmail.com">Email</a>
-      <a href="tel:+50661825718">WhatsApp / Call</a>
+      <a href="#work">Work</a>
+      <a href="#method">Method</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-contact">
+      <a href="mailto:gnuboss@gmail.com">gnuboss@gmail.com</a>
+      <a href="https://wa.me/50661825718" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="tel:+50661825718">+506 6182 5718</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <span class="label">© {year} Bronson Harrington</span>
+      <span class="label">San José, Costa Rica</span>
+      <span class="label" style="color:var(--orange)">Web3 · iGaming · Startups</span>
     </div>
   </div>
 </footer>
 
 <style>
 .footer {
-  border-top: 1px solid var(--border);
-  padding: 2.5rem 0;
+  background: var(--prussian);
+  color: var(--cream);
   margin-top: var(--gap);
 }
 
+.footer-top-rule {
+  height: 3px;
+  background: var(--orange);
+}
+
 .footer-inner {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  align-items: start;
 }
 
 .footer-logo {
   font-family: var(--font-display);
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 0.75rem;
 }
 
-.footer-inner p {
-  font-size: 0.8rem;
-  max-width: none;
-  margin: 0 auto;
+.footer-tagline {
+  font-size: 0.82rem;
+  color: rgba(234,226,183,0.5);
+  line-height: 1.6;
+  max-width: 24ch;
 }
 
-.footer-links {
+.footer-links,
+.footer-contact {
   display: flex;
-  gap: 1.5rem;
-  margin-left: auto;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-top: 0.25rem;
 }
 
-.footer-links a {
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
+.footer-links a,
+.footer-contact a {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--ink-muted);
-  transition: color 0.2s;
+  color: rgba(234,226,183,0.5);
+  transition: color 0.15s;
 }
 
-.footer-links a:hover { color: var(--accent); }
+.footer-links a:hover,
+.footer-contact a:hover { color: var(--orange); }
 
-@media (max-width: 540px) {
-  .footer-inner { flex-direction: column; align-items: flex-start; gap: 1rem; }
-  .footer-links { margin-left: 0; }
+.footer-bottom {
+  border-top: 1px solid rgba(234,226,183,0.1);
+  padding: 1.25rem 0;
+}
+
+.footer-bottom-inner {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-bottom-inner .label {
+  color: rgba(234,226,183,0.3);
+}
+
+@media (max-width: 640px) {
+  .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+  .footer-bottom-inner { gap: 1rem; }
 }
 </style>
