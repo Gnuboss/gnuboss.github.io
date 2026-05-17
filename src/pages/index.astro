@@ -434,6 +434,10 @@ import Base from '../layouts/Base.astro';
 .vertical-tag { display: block; }
 
 @media (max-width: 700px) {
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-bg-text { font-size: 5rem; opacity: 0.03; }
+  .hero-right { padding-top: 0; }
+  .hero-divider-line { display: none; }
   .verticals-grid { grid-template-columns: 1fr; }
   .vertical { border-right: none; border-bottom: 1px solid var(--border-strong); }
   .vertical:last-child { border-bottom: none; }
