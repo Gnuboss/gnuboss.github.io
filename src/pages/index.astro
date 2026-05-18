@@ -125,10 +125,72 @@ import Base from '../layouts/Base.astro';
   ============================================================ -->
   <section id="method" class="method">
     <div class="container">
-      <div class="method-header reveal">
+<div class="method-header reveal">
         <div class="rule"></div>
         <p class="label">The method</p>
         <h2>Three layers.<br/>One outcome<span class="accent">.</span></h2>
+        <p class="method-intro">A 90-day engagement moves through three sequential layers — each one making the next possible. The result is a web presence that compounds over time rather than decaying.</p>
+      </div>
+
+      <div class="method-chart reveal">
+        <svg width="100%" viewBox="0 0 680 382" role="img" xmlns="http://www.w3.org/2000/svg">
+          <title>90-Day Growth Framework</title>
+          <desc>A wide-format growth curve showing three stages — Foundation, Authority Build, and Due Diligence Signal — plotted against a 30/60/90-day timeline with an exponential breakout at day 90.</desc>
+          <defs>
+            <marker id="arrow-up" viewBox="0 0 10 10" refX="5" refY="8" markerWidth="7" markerHeight="7" orient="auto">
+              <path d="M1 8L5 2L9 8" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </marker>
+            <clipPath id="chart-clip">
+              <rect x="80" y="30" width="550" height="270"/>
+            </clipPath>
+            <linearGradient id="area-fill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#f77f00" stop-opacity="0.2"/>
+              <stop offset="55%" stop-color="#fcbf49" stop-opacity="0.08"/>
+              <stop offset="100%" stop-color="#003049" stop-opacity="0.02"/>
+            </linearGradient>
+          </defs>
+          <text x="80" y="20" font-family="'DM Mono', monospace" font-size="11" font-weight="500" fill="#003049" opacity="0.85" letter-spacing="1">90-DAY GROWTH FRAMEWORK</text>
+          <rect x="80"  y="30" width="183" height="270" fill="#003049" opacity="0.035"/>
+          <rect x="263" y="30" width="184" height="270" fill="#fcbf49" opacity="0.05"/>
+          <rect x="447" y="30" width="183" height="270" fill="#f77f00" opacity="0.06"/>
+          <line x1="80" y1="300" x2="630" y2="300" stroke="#003049" stroke-width="0.5" opacity="0.3"/>
+          <line x1="80" y1="210" x2="630" y2="210" stroke="#003049" stroke-width="0.5" opacity="0.1"/>
+          <line x1="80" y1="120" x2="630" y2="120" stroke="#003049" stroke-width="0.5" opacity="0.1"/>
+          <line x1="80" y1="30"  x2="630" y2="30"  stroke="#003049" stroke-width="0.5" opacity="0.1"/>
+          <line x1="263" y1="30" x2="263" y2="300" stroke="#003049" stroke-width="0.5" stroke-dasharray="4 4" opacity="0.2"/>
+          <line x1="447" y1="30" x2="447" y2="300" stroke="#003049" stroke-width="0.5" stroke-dasharray="4 4" opacity="0.2"/>
+          <path clip-path="url(#chart-clip)" d="M80,298 C100,296 140,292 170,288 C210,282 240,275 263,258 C290,238 310,215 340,188 C365,165 400,145 447,128 C475,118 500,102 530,78 C558,56 590,38 630,30 L630,300 Z" fill="url(#area-fill)"/>
+          <path clip-path="url(#chart-clip)" d="M80,298 C100,296 140,292 170,288 C210,282 240,275 263,258 C290,238 310,215 340,188 C365,165 400,145 447,128 C475,118 500,102 530,78 C558,56 590,38 630,30" fill="none" stroke="#003049" stroke-width="2" stroke-linecap="round"/>
+          <path d="M630,30 C633,20 636,12 638,4" fill="none" stroke="#f77f00" stroke-width="2" stroke-dasharray="4 3" stroke-linecap="round" marker-end="url(#arrow-up)"/>
+          <circle cx="80"  cy="298" r="4" fill="#003049" stroke="#eae2b7" stroke-width="2"/>
+          <circle cx="263" cy="258" r="5" fill="#003049" stroke="#eae2b7" stroke-width="2"/>
+          <circle cx="447" cy="128" r="5" fill="#f77f00" stroke="#eae2b7" stroke-width="2"/>
+          <circle cx="630" cy="30"  r="5" fill="#d62828" stroke="#eae2b7" stroke-width="2"/>
+          <line x1="80" y1="300" x2="80"  y2="28"  stroke="#003049" stroke-width="1.5" opacity="0.35"/>
+          <line x1="80" y1="300" x2="634" y2="300" stroke="#003049" stroke-width="1.5" opacity="0.35"/>
+          <line x1="80"  y1="300" x2="80"  y2="308" stroke="#003049" stroke-width="1" opacity="0.4"/>
+          <line x1="263" y1="300" x2="263" y2="308" stroke="#003049" stroke-width="1" opacity="0.4"/>
+          <line x1="447" y1="300" x2="447" y2="308" stroke="#003049" stroke-width="1" opacity="0.4"/>
+          <line x1="630" y1="300" x2="630" y2="308" stroke="#003049" stroke-width="1" opacity="0.4"/>
+          <text x="80"  y="322" text-anchor="middle" font-family="'DM Mono', monospace" font-size="11" fill="#003049" opacity="0.8">Day 0</text>
+          <text x="263" y="322" text-anchor="middle" font-family="'DM Mono', monospace" font-size="11" fill="#003049" opacity="0.9">Day 30</text>
+          <text x="447" y="322" text-anchor="middle" font-family="'DM Mono', monospace" font-size="11" fill="#003049" opacity="0.9">Day 60</text>
+          <text x="630" y="322" text-anchor="middle" font-family="'DM Mono', monospace" font-size="11" fill="#003049" opacity="0.9">Day 90</text>
+          <text x="18" y="168" text-anchor="middle" font-family="'DM Mono', monospace" font-size="10" fill="#003049" opacity="0.7" transform="rotate(-90,18,168)">Organic Authority</text>
+          <rect x="88"  y="338" width="118" height="24" rx="12" fill="#003049" opacity="0.07"/>
+          <rect x="88"  y="338" width="118" height="24" rx="12" fill="none" stroke="#003049" stroke-width="0.8" opacity="0.2"/>
+          <text x="147" y="354" text-anchor="middle" font-family="'DM Mono', monospace" font-size="10" font-weight="500" fill="#003049" opacity="0.75">Foundation</text>
+          <rect x="270" y="338" width="130" height="24" rx="12" fill="#fcbf49" opacity="0.15"/>
+          <rect x="270" y="338" width="130" height="24" rx="12" fill="none" stroke="#fcbf49" stroke-width="0.8" opacity="0.55"/>
+          <text x="335" y="354" text-anchor="middle" font-family="'DM Mono', monospace" font-size="10" font-weight="500" fill="#003049" opacity="0.85">Authority Build</text>
+          <rect x="452" y="338" width="148" height="24" rx="12" fill="#f77f00" opacity="0.15"/>
+          <rect x="452" y="338" width="148" height="24" rx="12" fill="none" stroke="#f77f00" stroke-width="0.8" opacity="0.55"/>
+          <text x="526" y="354" text-anchor="middle" font-family="'DM Mono', monospace" font-size="10" font-weight="500" fill="#003049" opacity="0.85">DD Signal</text>
+          <text x="644" y="22" text-anchor="start" font-family="'DM Mono', monospace" font-size="10" fill="#d62828" opacity="0.9">↑ Off chart</text>
+          <text x="171" y="52" text-anchor="middle" font-family="'DM Mono', monospace" font-size="9" fill="#003049" opacity="0.3" letter-spacing="1">01</text>
+          <text x="355" y="52" text-anchor="middle" font-family="'DM Mono', monospace" font-size="9" fill="#003049" opacity="0.3" letter-spacing="1">02</text>
+          <text x="538" y="52" text-anchor="middle" font-family="'DM Mono', monospace" font-size="9" fill="#003049" opacity="0.3" letter-spacing="1">03</text>
+        </svg>
       </div>
 
       <div class="layers">
@@ -486,6 +548,25 @@ import Base from '../layouts/Base.astro';
 }
 
 .method-header h2 { margin-top: 0.75rem; }
+
+.method-intro {
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  margin-top: 1rem;
+  max-width: 56ch;
+}
+
+.method-chart {
+  margin: 2.5rem 0 3rem;
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+  background: rgba(234,226,183,0.4);
+  overflow: hidden;
+}
+
+@media (max-width: 700px) {
+  .method-chart { padding: 1rem 0.5rem; }
+}
 
 .layers { display: flex; flex-direction: column; gap: 0; }
 
