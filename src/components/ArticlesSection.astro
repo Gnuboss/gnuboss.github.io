@@ -1,0 +1,130 @@
+---
+import { getCollection } from 'astro:content';
+
+const articles = await getCollection('articles', ({ data }) => !data.draft);
+const sorted = articles.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+{sorted.length > 0 && (
+  <section id="articles" class="articles">
+    <div class="container">
+      <div class="articles-header reveal">
+        <div class="rule"></div>
+        <p class="label">Articles</p>
+        <h2>Thinking out loud<span class="accent">.</span></h2>
+      </div>
+      <div class="articles-list">
+        {sorted.map((article, i) => {
+          const date = new Intl.DateTimeFormat('en-GB', {
+            month: 'short',
+            year: 'numeric',
+          }).format(article.data.date);
+          return (
+            <a href={`/articles/${article.slug}/`} class="article-item reveal" style={`transition-delay:${i * 0.08}s`}>
+              <span class="article-date label">{date}</span>
+              <div class="article-body">
+                <span class="article-title">{article.data.title}</span>
+                <span class="article-summary">{article.data.summary}</span>
+              </div>
+              <span class="article-arrow">→</span>
+            </a>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+)}
+
+<style>
+.articles {
+  padding: var(--gap) 0;
+}
+
+.articles-header {
+  margin-bottom: 2.5rem;
+}
+
+.articles-header h2 {
+  margin-top: 0.75rem;
+}
+
+.articles-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--border-strong);
+}
+
+.article-item {
+  display: grid;
+  grid-template-columns: 90px 1fr 24px;
+  gap: 1.5rem;
+  align-items: start;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  color: var(--ink);
+  transition: background 0.15s;
+  cursor: pointer;
+}
+
+.article-item:hover {
+  background: rgba(0,48,73,0.03);
+}
+
+.article-item:hover .article-arrow {
+  color: var(--orange);
+  transform: translateX(4px);
+}
+
+.article-item:hover .article-title {
+  color: var(--orange);
+}
+
+.article-date {
+  padding-top: 0.2rem;
+  color: var(--ink-muted);
+  flex-shrink: 0;
+}
+
+.article-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.article-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  font-weight: 400;
+  line-height: 1.2;
+  transition: color 0.15s;
+}
+
+.article-summary {
+  font-size: 0.88rem;
+  color: var(--ink-muted);
+  line-height: 1.6;
+  max-width: 62ch;
+}
+
+.article-arrow {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+  padding-top: 0.3rem;
+  transition: color 0.15s, transform 0.15s;
+}
+
+@media (max-width: 600px) {
+  .article-item {
+    grid-template-columns: 1fr 24px;
+    gap: 1rem;
+  }
+  .article-date {
+    display: none;
+  }
+  .article-summary {
+    display: none;
+  }
+}
+</style>
