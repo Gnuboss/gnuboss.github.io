@@ -104,54 +104,60 @@ const formattedDate = new Intl.DateTimeFormat('en-GB', {
 }
 
 /* ---- PROSE STYLES ---- */
-.prose {
+:global(.prose) {
   max-width: 68ch;
   font-size: 1.02rem;
   line-height: 1.82;
   color: var(--ink-soft);
 }
 
-.prose h2 {
-  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+:global(.prose h2) {
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
   font-weight: 400;
   color: var(--ink);
-  margin: 2.5rem 0 1rem;
-  line-height: 1.2;
+  margin: 3rem 0 1rem;
+  line-height: 1.8;
+  padding-bottom: 1rem;
 }
 
-.prose h3 {
+:global(.prose h3) {
   font-size: 1.15rem;
   font-weight: 500;
   color: var(--ink);
   margin: 2rem 0 0.75rem;
 }
 
-.prose p {
-  margin-bottom: 1.4rem;
+:global(.prose p) {
+  margin-bottom: 2rem;
   max-width: none;
+  display: block;
 }
 
-.prose strong {
+:global(.prose p + p) {
+  margin-top: 1.5rem;
+}
+
+:global(.prose strong) {
   font-weight: 500;
   color: var(--ink);
 }
 
-.prose em {
+:global(.prose em) {
   font-style: italic;
 }
 
-.prose ul,
-.prose ol {
+:global(.prose ul),
+:global(.prose ol) {
   padding-left: 1.5rem;
   margin-bottom: 1.4rem;
 }
 
-.prose li {
+:global(.prose li) {
   margin-bottom: 0.5rem;
   line-height: 1.75;
 }
 
-.prose blockquote {
+:global(.prose blockquote) {
   border-left: 3px solid var(--orange);
   padding-left: 1.5rem;
   margin: 2rem 0;
@@ -159,13 +165,13 @@ const formattedDate = new Intl.DateTimeFormat('en-GB', {
   color: var(--ink-soft);
 }
 
-.prose hr {
+:global(.prose hr) {
   border: none;
   border-top: 1px solid var(--border);
-  margin: 2.5rem 0;
+  margin: 3rem 0 2rem;
 }
 
-.prose a {
+:global(.prose a) {
   color: var(--orange);
   text-decoration: underline;
   text-decoration-color: rgba(247,127,0,0.35);
@@ -173,11 +179,11 @@ const formattedDate = new Intl.DateTimeFormat('en-GB', {
   transition: text-decoration-color 0.15s;
 }
 
-.prose a:hover {
+:global(.prose a:hover) {
   text-decoration-color: var(--orange);
 }
 
-.prose code {
+:global(.prose code) {
   font-family: var(--font-mono);
   font-size: 0.88em;
   background: rgba(0,48,73,0.06);
