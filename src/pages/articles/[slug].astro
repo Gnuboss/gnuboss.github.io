@@ -110,53 +110,47 @@ const formattedDate = new Intl.DateTimeFormat('en-GB', {
   color: var(--ink-soft);
 }
 
-:global(.prose h2) {
-  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+.prose h2 {
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
   font-weight: 400;
   color: var(--ink);
-  margin: 3rem 0 1rem;
-  line-height: 1.8;
-  padding-bottom: 1rem;
+  margin: 2.5rem 0 1rem;
+  line-height: 1.2;
 }
 
-:global(.prose h3) {
+.prose h3 {
   font-size: 1.15rem;
   font-weight: 500;
   color: var(--ink);
   margin: 2rem 0 0.75rem;
 }
 
-:global(.prose p) {
-  margin-bottom: 2rem;
+.prose p {
+  margin-bottom: 1.4rem;
   max-width: none;
-  display: block;
 }
 
-:global(.prose p + p) {
-  margin-top: 1.5rem;
-}
-
-:global(.prose strong) {
+.prose strong {
   font-weight: 500;
   color: var(--ink);
 }
 
-:global(.prose em) {
+.prose em {
   font-style: italic;
 }
 
-:global(.prose ul),
-:global(.prose ol) {
+.prose ul,
+.prose ol {
   padding-left: 1.5rem;
   margin-bottom: 1.4rem;
 }
 
-:global(.prose li) {
+.prose li {
   margin-bottom: 0.5rem;
   line-height: 1.75;
 }
 
-:global(.prose blockquote) {
+.prose blockquote {
   border-left: 3px solid var(--orange);
   padding-left: 1.5rem;
   margin: 2rem 0;
@@ -164,13 +158,13 @@ const formattedDate = new Intl.DateTimeFormat('en-GB', {
   color: var(--ink-soft);
 }
 
-:global(.prose hr) {
+.prose hr {
   border: none;
   border-top: 1px solid var(--border);
-  margin: 3rem 0 2rem;
+  margin: 2.5rem 0;
 }
 
-:global(.prose a) {
+.prose a {
   color: var(--orange);
   text-decoration: underline;
   text-decoration-color: rgba(247,127,0,0.35);
@@ -178,11 +172,11 @@ const formattedDate = new Intl.DateTimeFormat('en-GB', {
   transition: text-decoration-color 0.15s;
 }
 
-:global(.prose a:hover) {
+.prose a:hover {
   text-decoration-color: var(--orange);
 }
 
-:global(.prose code) {
+.prose code {
   font-family: var(--font-mono);
   font-size: 0.88em;
   background: rgba(0,48,73,0.06);
