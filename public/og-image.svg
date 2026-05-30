@@ -1,0 +1,61 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>Bronson Harrington — Organic Authority and Credibility Infrastructure</title>
+<desc>Default Open Graph hero graphic in propaganda editorial style — prussian blue, cream, and burnt orange palette with bold geometric composition.</desc>
+
+<rect width="1200" height="630" fill="#003049"/>
+
+<polygon points="0,630 0,200 490,630" fill="#002035" opacity="0.6"/>
+<polygon points="1200,0 1200,430 700,0" fill="#002035" opacity="0.6"/>
+
+<rect x="0" y="0" width="1200" height="7" fill="#f77f00"/>
+<rect x="0" y="623" width="1200" height="7" fill="#f77f00"/>
+<line x1="0" y1="7" x2="0" y2="623" stroke="#f77f00" stroke-width="7"/>
+<line x1="1193" y1="7" x2="1193" y2="623" stroke="#f77f00" stroke-width="7"/>
+
+<line x1="90" y1="130" x2="350" y2="130" stroke="#f77f00" stroke-width="3"/>
+<line x1="90" y1="136" x2="280" y2="136" stroke="#f77f00" stroke-width="0.8" opacity="0.4"/>
+
+<text x="90" y="280" font-family="Georgia, serif" font-size="155" font-weight="400" fill="#eae2b7" letter-spacing="-5" opacity="0.95">BH.</text>
+
+<line x1="90" y1="305" x2="1110" y2="305" stroke="#eae2b7" stroke-width="0.8" opacity="0.15"/>
+
+<text x="90" y="375" font-family="'Courier New', monospace" font-size="22" font-weight="500" fill="#f77f00" letter-spacing="5" opacity="0.9">ORGANIC AUTHORITY</text>
+<text x="90" y="408" font-family="'Courier New', monospace" font-size="22" font-weight="500" fill="#eae2b7" letter-spacing="5" opacity="0.5">CREDIBILITY INFRASTRUCTURE</text>
+
+<line x1="90" y1="432" x2="1110" y2="432" stroke="#eae2b7" stroke-width="0.5" opacity="0.1"/>
+
+<text x="90" y="476" font-family="'Courier New', monospace" font-size="18" fill="#eae2b7" opacity="0.35" letter-spacing="3">WEB3</text>
+<text x="224" y="476" font-family="'Courier New', monospace" font-size="18" fill="#f77f00" opacity="0.4">·</text>
+<text x="248" y="476" font-family="'Courier New', monospace" font-size="18" fill="#eae2b7" opacity="0.35" letter-spacing="3">IGAMING</text>
+<text x="436" y="476" font-family="'Courier New', monospace" font-size="18" fill="#f77f00" opacity="0.4">·</text>
+<text x="460" y="476" font-family="'Courier New', monospace" font-size="18" fill="#eae2b7" opacity="0.35" letter-spacing="3">STARTUPS</text>
+
+<text x="90" y="560" font-family="'Courier New', monospace" font-size="18" fill="#eae2b7" opacity="0.25" letter-spacing="2">GNUBOSS.GITHUB.IO</text>
+
+<line x1="840" y1="100" x2="840" y2="530" stroke="#eae2b7" stroke-width="0.8" opacity="0.08"/>
+
+<circle cx="1020" cy="315" r="190" fill="none" stroke="#f77f00" stroke-width="0.8" opacity="0.12"/>
+<circle cx="1020" cy="315" r="140" fill="none" stroke="#f77f00" stroke-width="0.8" opacity="0.1"/>
+<circle cx="1020" cy="315" r="88" fill="none" stroke="#f77f00" stroke-width="0.8" opacity="0.08"/>
+
+<path d="M900,490 C930,455 955,400 980,350 C1005,300 1022,258 1050,200 C1068,165 1086,140 1110,108" fill="none" stroke="#f77f00" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+<path d="M1110,108 C1114,92 1118,76 1122,62" fill="none" stroke="#f77f00" stroke-width="3" stroke-dasharray="6 4" stroke-linecap="round" opacity="0.6"/>
+
+<circle cx="900" cy="490" r="6" fill="#eae2b7" opacity="0.5"/>
+<circle cx="980" cy="350" r="6" fill="#fcbf49" opacity="0.6"/>
+<circle cx="1050" cy="200" r="6" fill="#f77f00" opacity="0.8"/>
+<circle cx="1110" cy="108" r="7" fill="#d62828" opacity="0.9"/>
+
+<rect x="897" y="510" width="3" height="20" fill="#eae2b7" opacity="0.2"/>
+<rect x="977" y="510" width="3" height="20" fill="#fcbf49" opacity="0.3"/>
+<rect x="1047" y="510" width="3" height="20" fill="#f77f00" opacity="0.4"/>
+
+<text x="900" y="548" font-family="'Courier New', monospace" font-size="14" fill="#eae2b7" opacity="0.25" text-anchor="middle">D0</text>
+<text x="980" y="548" font-family="'Courier New', monospace" font-size="14" fill="#eae2b7" opacity="0.3" text-anchor="middle">D30</text>
+<text x="1050" y="548" font-family="'Courier New', monospace" font-size="14" fill="#eae2b7" opacity="0.3" text-anchor="middle">D60</text>
+<text x="1112" y="548" font-family="'Courier New', monospace" font-size="14" fill="#f77f00" opacity="0.5" text-anchor="middle">D90</text>
+
+<rect x="90" y="582" width="70" height="3" fill="#f77f00" opacity="0.6"/>
+<rect x="164" y="582" width="35" height="3" fill="#f77f00" opacity="0.3"/>
+
+</svg>
