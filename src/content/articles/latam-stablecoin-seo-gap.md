@@ -89,4 +89,4 @@ The infrastructure to act is available today. The question isn't whether organic
 
 ---
 
-*25 years building organic search infrastructure in regulated, trust-sensitive verticals - iGaming, finance, and onchain fintech. If you're looking at your growth metrics and seeing what this piece describes, [let's talk](https://gnuboss.github.io/#contact).*
+*25 years building organic search infrastructure in regulated, trust-sensitive verticals - iGaming, finance, and onchain fintech. If you're looking at your growth metrics and seeing what this piece describes, [let's talk](../#contact).*
