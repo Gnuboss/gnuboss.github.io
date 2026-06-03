@@ -49,4 +49,4 @@ None of this is complicated. Most of it just requires doing it before you need i
 
 ---
 
-*Wondering what your project's web presence is currently signalling? [Request a free audit](https://gnuboss.github.io/#contact) - no pitch, just an honest read.*
+*Wondering what your project's web presence is currently signalling? [Request a free audit](../#contact) - no pitch, just an honest read.*
