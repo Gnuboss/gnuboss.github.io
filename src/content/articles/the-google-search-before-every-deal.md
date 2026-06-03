@@ -45,4 +45,4 @@ The good news is that most of your competitors haven't thought about this. The w
 
 ---
 
-*If you want to know what your web presence is currently signalling to a sceptical third party, [request a free audit](#contact). No pitch - just an honest read.*
+*If you want to know what your web presence is currently signalling to a sceptical third party, [request a free audit](https://gnuboss.github.io/#contact). No pitch - just an honest read.*
